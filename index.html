@@ -1,369 +1,429 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Tue Oct 07 2014 15:11:40 GMT+0000 (UTC) -->
+<!-- Last Published: Wed Oct 08 2014 19:42:15 GMT+0000 (UTC) -->
 <html data-wf-site="5429a1dd33f5da892c610d70" data-wf-page="5429a1dd33f5da892c610d71">
+
 <head>
-  <meta charset="utf-8">
-  <title>portcabin</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Webflow">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/portcabin.webflow.css">
-  <script type="text/javascript" src="js/modernizr.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/placeholder/favicon.ico">
-  <style type="text/css">
-    @media screen and (min-width: 1100px) { .w-container { max-width: 1130px; } }
-  </style>
+    <meta charset="utf-8">
+    <title>portcabin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Webflow">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/webflow.css">
+    <link rel="stylesheet" type="text/css" href="css/portcabin.webflow.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/placeholder/favicon.ico">
+    <style type="text/css">
+    @media screen and (min-width: 1100px) {
+        .w-container {
+            max-width: 1130px;
+        }
+    }
+    </style>
 </head>
+
 <body>
-  <div class="w-nav navigation" id="company" data-collapse="tiny" data-animation="default" data-duration="400">
-    <div class="nav-wrap">
-      <div class="w-container" data-ix="fadein1">
-        <div class="w-row">
-          <div class="w-col w-col-5 w-clearfix">
-            <div class="logo-wrap"><a class="logo" href="#">LOGOTIP</a>
+    <div class="modal">
+        <div class="close-icon" data-ix="hide-modal"></div>
+        <h1 class="slider-form-heading modal-header">Оставьте заявку сегодня</h1>
+        <div class="horizontal-delimiter"></div>
+        <div class="benefits">
+            <div class="w-clearfix benefit first">
+                <img class="check-icon" src="images/check-icon.png" alt="542c40e12b2f1bb424df8096_check-icon.png">
+                <div class="benefit-text">Бесплатная доставка</div>
             </div>
-            <div class="vertical-delimiter">&nbsp;&nbsp;</div>
-            <div class="contacts">
-              <div class="email"><a class="email-link" href="mailto:info@portacabin.ru">Пишите нам: info@portacabin.ru</a>
-              </div>
-              <div class="phones"><a class="phone" href="tel:84955325697">Звоните нам: 8-495-532-65-97&nbsp;</a>
-              </div>
+            <div class="w-clearfix benefit">
+                <img class="check-icon" src="images/check-icon.png" alt="542c40e12b2f1bb424df8096_check-icon.png">
+                <div class="benefit-text">Индивидуальный менеджер</div>
             </div>
-          </div>
-          <div class="w-col w-col-7 w-clearfix">
-            <nav class="w-nav-menu w-hidden-medium w-hidden-small w-hidden-tiny" role="navigation"><a class="w-nav-link nav-link" href="#company">О компании</a><a class="w-nav-link nav-link" href="#cons">Преимущества</a><a class="w-nav-link nav-link" href="#products">Продукция</a><a class="w-nav-link nav-link" href="#process">Процесс</a>
-              <a
-              class="w-nav-link nav-link" href="#testimonials">Отзывы</a><a class="w-nav-link nav-link" href="#contacts">Контакты</a>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="slider-section">
-    <div class="w-container">
-      <div class="w-slider slider" data-animation="slide" data-duration="500" data-infinite="1" data-easing="ease-in-out">
-        <div class="slider-content">
-          <div class="w-row">
-            <div class="w-col w-col-6">
-              <h1 class="slider-heading" data-ix="fadein1">Модульные здания от производителя</h1>
-              <p class="slider-paragraph" data-ix="fadein300">Конструкции в любой комплектации по Вашему желанию.
-                <br>Изготовим индивидуальный проект любой сложности.
-                <br>В наличии и под заказ.</p>
+            <div class="w-clearfix benefit">
+                <img class="check-icon" src="images/check-icon.png" alt="542c40e12b2f1bb424df8096_check-icon.png">
+                <div class="benefit-text">Гарантия от 6 месяцев</div>
             </div>
-            <div class="w-col w-col-6 w-clearfix">
-              <div class="slider-form" data-ix="fadein1">
-                <h1 class="slider-form-heading">Оставьте заявку сегодня</h1>
-                <div class="horizontal-delimiter"></div>
-                <div class="w-clearfix benefit first">
-                  <img class="check-icon" src="images/check-icon.png" alt="542c40e12b2f1bb424df8096_check-icon.png">
-                  <div class="benefit-text">Бесплатная доставка</div>
-                </div>
-                <div class="w-clearfix benefit">
-                  <img class="check-icon" src="images/check-icon.png" alt="542c40e12b2f1bb424df8096_check-icon.png">
-                  <div class="benefit-text">Индивидуальный менеджер</div>
-                </div>
-                <div class="w-clearfix benefit">
-                  <img class="check-icon" src="images/check-icon.png" alt="542c40e12b2f1bb424df8096_check-icon.png">
-                  <div class="benefit-text">Гарантия от 6 месяцев</div>
-                </div>
-                <div class="w-clearfix benefit last">
-                  <img class="check-icon bold" src="images/check-icon-bold.png" alt="542c428b9a41e2da4e2cbf80_check-icon-bold.png">
-                  <div class="benefit-text green">&nbsp;Скидка при заказе</div>
-                </div>
-                <div class="horizontal-delimiter"></div>
-                <div class="w-form">
-                  <form class="w-clearfix" id="email-form" name="email-form" data-name="Email Form">
-                    <input class="w-input input" id="username" type="text" placeholder="Ваше имя" name="username" required="required" data-name="username">
-                    <input class="w-input input" id="email" type="text" placeholder="Ваше email" name="email" required="required" data-name="email">
-                    <input class="w-input input" id="phone" type="text" placeholder="Ваш телефон" name="phone" required="required" data-name="phone">
-                    <input class="w-button submit" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
-                  </form>
-                  <div class="w-form-done">
-                    <p>Thank you! Your submission has been received!</p>
-                  </div>
-                  <div class="w-form-fail">
-                    <p>Oops! Something went wrong while submitting the form :(</p>
-                  </div>
-                </div>
-              </div>
+            <div class="w-clearfix benefit last">
+                <img class="check-icon bold" src="images/check-icon-bold.png" alt="542c428b9a41e2da4e2cbf80_check-icon-bold.png">
+                <div class="benefit-text green">&nbsp;Скидка при заказе</div>
             </div>
-          </div>
         </div>
-        <div class="w-slider-mask">
-          <div class="w-slide">
-            <div class="slide-message">
-              <p class="slider-paragraph complex" data-ix="fadein400">Блок-контейнер</p>
-              <div class="total"><strong class="amount" data-ix="fadein400">4 000 руб.</strong>
-              </div>
-            </div>
-            <img class="slide-image first-image" src="images/image1.png" alt="542af4faae69925e30ac9fc3_image1.png">
-          </div>
-          <div class="w-slide">
-            <img class="slide-image second-image" src="images/image2.png" alt="542af50cf03924731b947bb6_image2.png">
-            <div class="slide-message module">
-              <p class="slider-paragraph complex">Модульное здание</p>
-              <div class="total"><strong class="amount">4 000 руб.</strong>
-              </div>
-            </div>
-          </div>
-          <div class="w-slide">
-            <img class="slide-image" src="images/image3.png" alt="542af51eae69925e30ac9fc4_image3.png">
-            <div class="slide-message block">
-              <p class="slider-paragraph complex">Административно-бытовой комплекс&nbsp;от</p>
-              <div class="total"><strong class="amount">4 000 руб.</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-slider-arrow-left arrow-left">
-          <div class="w-icon-slider-left arrow" data-ix="fadein600"></div>
-        </div>
-        <div class="w-slider-arrow-right arrow-right">
-          <div class="w-icon-slider-right arrow" data-ix="fadein600right"></div>
-        </div>
-        <div class="w-slider-nav w-round"></div>
-      </div>
-    </div>
-  </div>
-  <div id="cons">
-    <div class="w-container">
-      <h1 class="cons-heading">Преимущества</h1>
-      <div class="curved-delimiter"></div>
-      <div class="w-clearfix cons-list">
-        <div class="con first" data-ix="popup">
-          <img class="con-image" src="images/5-t.png" alt="542c49c02b2f1bb424df8150_5-t.png">
-          <p class="con-description">Каркас выдерживает до 5 т. полезной нагрузки</p>
-        </div>
-        <div class="con" data-ix="popup-2">
-          <img class="con-image" src="images/clock-earth-icon.png" alt="542c4dda2b2f1bb424df8191_clock-earth-icon.png">
-          <p class="con-description">Доставку осуществляем везед и в срок</p>
-        </div>
-        <div class="con" data-ix="popup-3">
-          <img class="con-image" src="images/construction-icon.png" alt="542c4dca2b2f1bb424df818e_construction-icon.png">
-          <p class="con-description">Производим и монтируем здание за минимальное время</p>
-        </div>
-        <div class="con" data-ix="popup-4">
-          <img class="con-image" src="images/service-icon.png" alt="542c4dc1bdc3beb3243772e8_service-icon.png">
-          <p class="con-description">Первоклассное сервисное и гарантийное обслуживание</p>
-        </div>
-        <div class="con" data-ix="popup-5">
-          <img class="con-image" src="images/earth-icon.png" alt="542c4e0c0252bedb4e63e43b_earth-icon.png">
-          <p class="con-description">Дешевая и легкая эксплуатация весь срок службы</p>
-        </div>
-        <div class="con last" data-ix="popup-6">
-          <img class="con-image" src="images/cheaper-icon.png" alt="542c4db09a41e2da4e2cc10e_cheaper-icon.png">
-          <p class="con-description">Комплектация объектов&nbsp;в 2 раза дешевле</p>
-        </div>
-      </div>
-      <div class="submit-wrap"><a class="button submit cons-submit" href="#">Оставить заявку</a>
-      </div>
-    </div>
-  </div>
-  <div class="products-section" id="products">
-    <div class="w-container">
-      <h1 class="cons-heading">Продукция</h1>
-      <div class="curved-delimiter products-delimiter"></div>
-      <div class="products-list">
-        <div class="product">
-          <h1 class="slider-form-heading product-heading">Блок-контейнер</h1>
-          <div class="horizontal-delimiter"></div>
-          <img class="product-image first" src="images/product-image-1.png" alt="542c52b3bdc3beb32437732c_product-image-1.png">
-          <div class="horizontal-delimiter"></div>
-          <p class="product-description">Прекрасно подходит для комплектации любого объекта</p>
-          <div class="product-price">от 46 000 руб.</div><a class="button submit product-button" href="#">Закажите сейчас</a>
-        </div>
-        <div class="product middle">
-          <div class="ogranka"></div>
-          <div class="hit">Хит</div>
-          <h1 class="slider-form-heading product-heading">Модульное здание</h1>
-          <div class="horizontal-delimiter"></div>
-          <img class="product-image first" src="images/modular-building.png" alt="542c56289a41e2da4e2cc198_modular-building.png">
-          <div class="horizontal-delimiter"></div>
-          <p class="product-description">Для любых целей: от зала совещаний до офиса продаж</p>
-          <div class="product-price">от 125 000 руб.</div><a class="button submit product-button" href="#">Закажите сейчас</a>
-        </div>
-        <div class="product">
-          <h1 class="slider-form-heading product-heading last-heading">Административно-бытовой комплекс</h1>
-          <div class="horizontal-delimiter last"></div>
-          <img class="product-image last" src="images/campus.png" alt="542c563c9a41e2da4e2cc19c_campus.png">
-          <div class="horizontal-delimiter"></div>
-          <p class="product-description last">Минимальная цена строительства и эксплуатации для любых объектов</p>
-          <div class="product-price">от 4 900 руб.</div><a class="button submit product-button" href="#">Закажите сейчас</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="process-section" id="process">
-    <div class="w-container">
-      <div class="process-head">
-        <h1 class="process-heading">Процесс работы</h1>
-        <div class="white-delimiter"></div>
-      </div>
-      <div class="w-slider process-slider" data-animation="slide" data-duration="500" data-infinite="1">
-        <div class="w-slider-mask">
-          <div class="w-slide w-clearfix process-slide">
-            <div class="step-number">1</div>
-            <div class="step-number slash">/</div>
-            <div class="process-step-description">
-              <h1 class="process-step-header">Бесплатный проект</h1>
-              <p class="step-text">Менеджер подготовит проект здания и&nbsp;коммерческое предложение&nbsp;в день обращения</p>
-            </div>
-            <div class="process-step-image-wrap">
-              <img src="images/request-icon.png" alt="542d5be0ed30ec84512efbfb_request-icon.png">
-            </div>
-          </div>
-          <div class="w-slide w-clearfix process-slide">
-            <div class="step-number">2</div>
-            <div class="step-number slash">/</div>
-            <div class="process-step-description">
-              <h1 class="process-step-header">Оставьте заявку</h1>
-              <p class="step-text">В течении 5 минут с Вами свяжется менеджер и&nbsp;уточнит все&nbsp;пожелания по конструкции строительства</p>
-            </div>
-            <div class="process-step-image-wrap">
-              <img class="step-2-image" src="images/project-icon.png" alt="542d5caaaf9e5c4227c9d8cd_project-icon.png">
-            </div>
-          </div>
-          <div class="w-slide w-clearfix process-slide">
-            <div class="step-number">3</div>
-            <div class="step-number slash">/</div>
-            <div class="process-step-description">
-              <h1 class="process-step-header">Оформление договора</h1>
-              <p class="step-text">После согласования проекта определяем дату поставки и монтажа модульного здания, предоставляем договор и счет&nbsp;для&nbsp;оплаты</p>
-            </div>
-            <div class="process-step-image-wrap">
-              <img class="step-2-image" src="images/dogovor-icon.png" alt="542d6002e785314127dcd0da_dogovor-icon.png">
-            </div>
-          </div>
-          <div class="w-slide w-clearfix process-slide">
-            <div class="step-number">4</div>
-            <div class="step-number slash">/</div>
-            <div class="process-step-description">
-              <h1 class="process-step-header">Получение здания и начало использования</h1>
-              <p class="step-text">После&nbsp;оплаты и передачи конструкции в производство, в установленный срок у Вас на участке возводится модульное здание</p>
-            </div>
-            <div class="process-step-image-wrap">
-              <img class="step-2-image" src="images/building-icon.png" alt="542d60b2ed30ec84512efc68_building-icon.png">
-            </div>
-          </div>
-        </div>
-        <div class="w-slider-arrow-left">
-          <div class="w-icon-slider-left"></div>
-        </div>
-        <div class="w-slider-arrow-right">
-          <div class="w-icon-slider-right"></div>
-        </div>
-        <div class="w-slider-nav w-round"></div>
-      </div>
-    </div>
-  </div>
-  <div class="testimonials-section" id="testimonials">
-    <div class="w-container">
-      <h1 class="cons-heading">Отзывы</h1>
-      <div class="curved-delimiter short"></div>
-      <div class="w-clearfix testimonials-list">
-        <div class="w-clearfix testimonial">
-          <img class="testimonial-image" src="images/rokada.png" alt="542d67dced30ec84512efd47_rokada.png">
-          <div class="testimonial-content">
-            <p>Хочется поблагодарить ребят за быстрое реагирование на всех этапах работы от проекта до готовой модульной конструкции.</p>
-            <div class="horizontal-delimiter"></div>
-            <div class="autor">Медеджер отдела снабжения</div>
-          </div>
-        </div>
-        <div class="w-clearfix testimonial middle">
-          <img class="testimonial-image" src="images/neftegaz.png" alt="542d6af94bd4dc8351c99399_neftegaz.png">
-          <div class="testimonial-content">
-            <p>Большое спасибо за понимание и выполнение обязательств в процессе сложной поставки блок-контейнеров в Сочи.</p>
-            <div class="horizontal-delimiter"></div>
-            <div class="autor">Главный специалист департамента МТО</div>
-          </div>
-        </div>
-        <div class="w-clearfix testimonial">
-          <img class="testimonial-image" src="images/tower-logo.png" alt="542d6b05ed30ec84512efd94_tower-logo.png">
-          <div class="testimonial-content">
-            <p>Работаем по поставкам блок-контейнеров больше года . Не смотря на редкие задержки и загруженность производства, наблюдается ответственный подход к делу и качеству.</p>
-            <div class="horizontal-delimiter"></div>
-            <div class="autor">Руководитель отдела снабжения</div>
-          </div>
-        </div>
-        <div class="w-clearfix testimonial">
-          <img class="testimonial-image" src="images/tower-logo.png" alt="542d6b05ed30ec84512efd94_tower-logo.png">
-          <div class="testimonial-content">
-            <p>Работаем по поставкам блок-контейнеров больше года . Не смотря на редкие задержки и загруженность производства, наблюдается ответственный подход к делу и качеству.</p>
-            <div class="horizontal-delimiter"></div>
-            <div class="autor">Руководитель отдела снабжения</div>
-          </div>
-        </div>
-        <div class="w-clearfix testimonial last">
-          <img class="testimonial-image" src="images/tower-logo.png" alt="542d6b05ed30ec84512efd94_tower-logo.png">
-          <div class="testimonial-content">
-            <p>Работаем по поставкам блок-контейнеров больше года . Не смотря на редкие задержки и загруженность производства, наблюдается ответственный подход к делу и качеству.</p>
-            <div class="horizontal-delimiter"></div>
-            <div class="autor">Руководитель отдела снабжения</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="load-more" data-ix="show-all-testimonials">
-      <div class="load-more-text">Показать больше отзывов</div>
-      <img class="arrow-down" src="images/arrow-down.png" alt="542d8fc6e785314127dcd426_arrow-down.png">
-    </div>
-  </div>
-  <div class="footer" id="contacts">
-    <div class="footer-wrap">
-      <div class="w-container">
-        <div class="w-row">
-          <div class="w-col w-col-4">
-            <h1>Контакты</h1>
-            <div class="contacts-text">Общество с ограниченной
-              <br>ответственностью «АСС»</div>
-            <div class="w-clearfix ogrn-wrap">
-              <div class="ogrn">ОГРН
-                <br>ИНН
-                <br>КПП</div>
-              <div class="ogrn-right">1137746628733
-                <br>7724883219
-                <br>772401001</div>
-            </div>
-            <div class="contacts-text last">Будем рады Вас видеть:
-              <br>115280, г. Москва, ул. Ленинская Слобода, 19, БЦ Омега Плаза.</div>
-          </div>
-          <div class="w-col w-col-4">
-            <div class="contact-us"><a class="footer-link" href="mailto:info@portacabin.ru">Пишите нам: info@portacabin.ru&nbsp;</a>
-              <a class="footer-link" href="tel:84955326597">
-                <br>Звоните нам: 8-495-532-65-97</a>
-            </div>
-          </div>
-          <div class="w-col w-col-4">
-            <h1 class="questions">С удовольствием ответим 
-на любой ваш вопрос</h1>
-            <div class="w-form">
-              <form class="w-clearfix footer-form" id="email-form" name="email-form" data-name="Email Form">
-                <input class="w-input input footer-input" id="username-2" type="text" placeholder="Ваше имя" name="username-2" required="required" data-name="Username 2">
-                <input class="w-input input footer-input" id="email-2" type="text" placeholder="Ваше email" name="email-2" required="required" data-name="Email 2">
-                <input class="w-input input footer-input" id="phone-2" type="text" placeholder="Ваш телефон" name="phone-2" required="required" data-name="Phone 2">
-                <input class="w-button submit footer-submit" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
-              </form>
-              <div class="w-form-done">
+        <div class="w-form">
+            <form class="modal-form" id="email-form" name="email-form" data-name="Email Form">
+                <input class="w-input input modal-input" id="username-3" type="text" placeholder="Ваше имя" name="username-3" required="required" data-name="Username 3">
+                <input class="w-input input modal-input" id="email-3" type="text" placeholder="Ваше email" name="email-3" required="required" data-name="Email 3">
+                <input class="w-input input modal-input" id="phone-3" type="text" placeholder="Ваш телефон" name="phone-3" required="required" data-name="Phone 3">
+                <input class="w-button submit modal-submit" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
+            </form>
+            <div class="w-form-done">
                 <p>Thank you! Your submission has been received!</p>
-              </div>
-              <div class="w-form-fail">
+            </div>
+            <div class="w-form-fail">
                 <p>Oops! Something went wrong while submitting the form :(</p>
-              </div>
             </div>
-            <div class="w-clearfix studio-link">
-              <div class="developed">Разработано в&nbsp;</div>
-              <img class="your-face" src="images/your-face.png" alt="542d9ddbe785314127dcd4f0_your-face.png">
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
-  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+    <div class="w-nav navigation" id="company" data-collapse="tiny" data-animation="default" data-duration="400">
+        <div class="nav-wrap">
+            <div class="w-container" data-ix="fadein1">
+                <div class="w-row">
+                    <div class="w-col w-col-5 w-clearfix">
+                        <div class="logo-wrap"><a class="logo" href="#">LOGOTIP</a>
+                        </div>
+                        <div class="vertical-delimiter">&nbsp;&nbsp;</div>
+                        <div class="contacts">
+                            <div class="email"><a class="email-link" href="mailto:info@portacabin.ru">Пишите нам: info@portacabin.ru</a>
+                            </div>
+                            <div class="phones"><a class="phone" href="tel:84955325697">Звоните нам: 8-495-532-65-97&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-col w-col-7 w-clearfix">
+                        <nav class="w-nav-menu w-hidden-medium w-hidden-small w-hidden-tiny" role="navigation"><a class="w-nav-link nav-link" href="#company">О компании</a><a class="w-nav-link nav-link" href="#cons">Преимущества</a><a class="w-nav-link nav-link" href="#products">Продукция</a><a class="w-nav-link nav-link" href="#process">Процесс</a>
+                            <a class="w-nav-link nav-link" href="#testimonials">Отзывы</a><a class="w-nav-link nav-link" href="#contacts">Контакты</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-section">
+        <div class="w-container">
+            <div class="w-slider slider" data-animation="slide" data-duration="500" data-infinite="1" data-easing="ease-in-out">
+                <div class="slider-content">
+                    <div class="w-row">
+                        <div class="w-col w-col-6">
+                            <h1 class="slider-heading" data-ix="fadein1">Модульные здания от производителя</h1>
+                            <p class="slider-paragraph" data-ix="fadein300">Конструкции в любой комплектации по Вашему желанию.
+                                <br>Изготовим индивидуальный проект любой сложности.
+                                <br>В наличии и под заказ.</p>
+                        </div>
+                        <div class="w-col w-col-6 w-clearfix">
+                            <div class="slider-form" data-ix="fadein1">
+                                <h1 class="slider-form-heading">Оставьте заявку сегодня</h1>
+                                <div class="horizontal-delimiter"></div>
+                                <div class="w-clearfix benefit first">
+                                    <img class="check-icon" src="images/check-icon.png" alt="542c40e12b2f1bb424df8096_check-icon.png">
+                                    <div class="benefit-text">Бесплатная доставка</div>
+                                </div>
+                                <div class="w-clearfix benefit">
+                                    <img class="check-icon" src="images/check-icon.png" alt="542c40e12b2f1bb424df8096_check-icon.png">
+                                    <div class="benefit-text">Индивидуальный менеджер</div>
+                                </div>
+                                <div class="w-clearfix benefit">
+                                    <img class="check-icon" src="images/check-icon.png" alt="542c40e12b2f1bb424df8096_check-icon.png">
+                                    <div class="benefit-text">Гарантия от 6 месяцев</div>
+                                </div>
+                                <div class="w-clearfix benefit last">
+                                    <img class="check-icon bold" src="images/check-icon-bold.png" alt="542c428b9a41e2da4e2cbf80_check-icon-bold.png">
+                                    <div class="benefit-text green">&nbsp;Скидка при заказе</div>
+                                </div>
+                                <div class="horizontal-delimiter"></div>
+                                <div class="w-form">
+                                    <form class="w-clearfix" id="email-form" name="email-form" data-name="Email Form">
+                                        <input class="w-input input" id="username" type="text" placeholder="Ваше имя" name="username" required="required" data-name="username">
+                                        <input class="w-input input" id="email" type="text" placeholder="Ваше email" name="email" required="required" data-name="email">
+                                        <input class="w-input input" id="phone" type="text" placeholder="Ваш телефон" name="phone" required="required" data-name="phone">
+                                        <input class="w-button submit" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
+                                    </form>
+                                    <div class="w-form-done">
+                                        <p>Thank you! Your submission has been received!</p>
+                                    </div>
+                                    <div class="w-form-fail">
+                                        <p>Oops! Something went wrong while submitting the form :(</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-slider-mask">
+                    <div class="w-slide">
+                        <div class="slide-message">
+                            <p class="slider-paragraph complex" data-ix="fadein400">Блок-контейнер</p>
+                            <div class="total">
+                                <strong class="amount" data-ix="fadein400">4 000 руб.</strong>
+                            </div>
+                        </div>
+                        <img class="slide-image first-image" src="images/image1.png" alt="542af4faae69925e30ac9fc3_image1.png">
+                    </div>
+                    <div class="w-slide">
+                        <img class="slide-image second-image" src="images/image2.png" alt="542af50cf03924731b947bb6_image2.png">
+                        <div class="slide-message module">
+                            <p class="slider-paragraph complex">Модульное здание</p>
+                            <div class="total">
+                                <strong class="amount">4 000 руб.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-slide">
+                        <img class="slide-image" src="images/image3.png" alt="542af51eae69925e30ac9fc4_image3.png">
+                        <div class="slide-message block">
+                            <p class="slider-paragraph complex">Административно-бытовой комплекс&nbsp;от</p>
+                            <div class="total">
+                                <strong class="amount">4 000 руб.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-slider-arrow-left arrow-left">
+                    <div class="w-icon-slider-left arrow" data-ix="fadein600"></div>
+                </div>
+                <div class="w-slider-arrow-right arrow-right">
+                    <div class="w-icon-slider-right arrow" data-ix="fadein600right"></div>
+                </div>
+                <div class="w-slider-nav w-round"></div>
+            </div>
+        </div>
+    </div>
+    <div class="cons-section section" id="cons">
+        <div class="w-container">
+            <h1 class="cons-heading">Преимущества</h1>
+            <div class="curved-delimiter"></div>
+            <div class="w-clearfix cons-list">
+                <div class="con first" data-ix="popup">
+                    <img class="con-image" src="images/5-t.png" alt="542c49c02b2f1bb424df8150_5-t.png">
+                    <p class="con-description">Каркас выдерживает до 5 т. полезной нагрузки</p>
+                </div>
+                <div class="con" data-ix="popup-2">
+                    <img class="con-image" src="images/clock-earth-icon.png" alt="542c4dda2b2f1bb424df8191_clock-earth-icon.png">
+                    <p class="con-description">Доставку осуществляем везед и в срок</p>
+                </div>
+                <div class="con" data-ix="popup-3">
+                    <img class="con-image" src="images/construction-icon.png" alt="542c4dca2b2f1bb424df818e_construction-icon.png">
+                    <p class="con-description">Производим и монтируем здание за минимальное время</p>
+                </div>
+                <div class="con" data-ix="popup-4">
+                    <img class="con-image" src="images/service-icon.png" alt="542c4dc1bdc3beb3243772e8_service-icon.png">
+                    <p class="con-description">Первоклассное сервисное и гарантийное обслуживание</p>
+                </div>
+                <div class="con" data-ix="popup-5">
+                    <img class="con-image" src="images/earth-icon.png" alt="542c4e0c0252bedb4e63e43b_earth-icon.png">
+                    <p class="con-description">Дешевая и легкая эксплуатация весь срок службы</p>
+                </div>
+                <div class="con last" data-ix="popup-6">
+                    <img class="con-image" src="images/cheaper-icon.png" alt="542c4db09a41e2da4e2cc10e_cheaper-icon.png">
+                    <p class="con-description">Комплектация объектов&nbsp;в 2 раза дешевле</p>
+                </div>
+            </div>
+            <div class="submit-wrap"><a class="button submit cons-submit" href="#" data-ix="show-modal">Оставить заявку</a>
+            </div>
+        </div>
+    </div>
+    <div class="products-section section" id="products">
+        <div class="w-container">
+            <h1 class="cons-heading">Продукция</h1>
+            <div class="curved-delimiter products-delimiter"></div>
+            <div class="products-list">
+                <div class="product" data-ix="fadeup">
+                    <h1 class="slider-form-heading product-heading">Блок-контейнер</h1>
+                    <div class="horizontal-delimiter"></div>
+                    <img class="product-image first" src="images/product-image-1.png" alt="542c52b3bdc3beb32437732c_product-image-1.png">
+                    <div class="horizontal-delimiter"></div>
+                    <p class="product-description">Прекрасно подходит для комплектации любого объекта</p>
+                    <div class="product-price">от 46 000 руб.</div><a class="button submit product-button" href="#" data-ix="show-modal">Закажите сейчас</a>
+                </div>
+                <div class="product middle" data-ix="fadeup-2">
+                    <div class="ogranka"></div>
+                    <div class="hit">Хит</div>
+                    <h1 class="slider-form-heading product-heading">Модульное здание</h1>
+                    <div class="horizontal-delimiter"></div>
+                    <img class="product-image first" src="images/modular-building.png" alt="542c56289a41e2da4e2cc198_modular-building.png">
+                    <div class="horizontal-delimiter"></div>
+                    <p class="product-description">Для любых целей: от зала совещаний до офиса продаж</p>
+                    <div class="product-price">от 125 000 руб.</div><a class="button submit product-button" href="#" data-ix="show-modal">Закажите сейчас</a>
+                </div>
+                <div class="product" data-ix="fadeup">
+                    <h1 class="slider-form-heading product-heading last-heading">Административно-бытовой комплекс</h1>
+                    <div class="horizontal-delimiter last"></div>
+                    <img class="product-image last" src="images/campus.png" alt="542c563c9a41e2da4e2cc19c_campus.png">
+                    <div class="horizontal-delimiter"></div>
+                    <p class="product-description last">Минимальная цена строительства и эксплуатации для любых объектов</p>
+                    <div class="product-price">от 4 900 руб.</div><a class="button submit product-button" href="#" data-ix="show-modal">Закажите сейчас</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="process-section" id="process">
+        <div class="w-container">
+            <div class="process-head">
+                <h1 class="process-heading">Процесс работы</h1>
+                <div class="white-delimiter"></div>
+            </div>
+            <div class="w-slider process-slider" data-animation="slide" data-duration="500" data-infinite="1">
+                <div class="w-slider-mask">
+                    <div class="w-slide w-clearfix process-slide">
+                        <div class="step-number">1</div>
+                        <div class="step-number slash">/</div>
+                        <div class="process-step-description">
+                            <h1 class="process-step-header">Бесплатный проект</h1>
+                            <p class="step-text">Менеджер подготовит проект здания и&nbsp;коммерческое предложение&nbsp;в день обращения</p>
+                        </div>
+                        <div class="process-step-image-wrap">
+                            <img src="images/request-icon.png" alt="542d5be0ed30ec84512efbfb_request-icon.png">
+                        </div>
+                    </div>
+                    <div class="w-slide w-clearfix process-slide">
+                        <div class="step-number">2</div>
+                        <div class="step-number slash">/</div>
+                        <div class="process-step-description">
+                            <h1 class="process-step-header">Оставьте заявку</h1>
+                            <p class="step-text">В течении 5 минут с Вами свяжется менеджер и&nbsp;уточнит все&nbsp;пожелания по конструкции строительства</p>
+                        </div>
+                        <div class="process-step-image-wrap">
+                            <img class="step-2-image" src="images/project-icon.png" alt="542d5caaaf9e5c4227c9d8cd_project-icon.png">
+                        </div>
+                    </div>
+                    <div class="w-slide w-clearfix process-slide">
+                        <div class="step-number">3</div>
+                        <div class="step-number slash">/</div>
+                        <div class="process-step-description">
+                            <h1 class="process-step-header">Оформление договора</h1>
+                            <p class="step-text">После согласования проекта определяем дату поставки и монтажа модульного здания, предоставляем договор и счет&nbsp;для&nbsp;оплаты</p>
+                        </div>
+                        <div class="process-step-image-wrap">
+                            <img class="step-2-image" src="images/dogovor-icon.png" alt="542d6002e785314127dcd0da_dogovor-icon.png">
+                        </div>
+                    </div>
+                    <div class="w-slide w-clearfix process-slide">
+                        <div class="step-number">4</div>
+                        <div class="step-number slash">/</div>
+                        <div class="process-step-description">
+                            <h1 class="process-step-header">Получение здания и начало использования</h1>
+                            <p class="step-text">После&nbsp;оплаты и передачи конструкции в производство, в установленный срок у Вас на участке возводится модульное здание</p>
+                        </div>
+                        <div class="process-step-image-wrap">
+                            <img class="step-2-image" src="images/building-icon.png" alt="542d60b2ed30ec84512efc68_building-icon.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-slider-arrow-left">
+                    <div class="w-icon-slider-left"></div>
+                </div>
+                <div class="w-slider-arrow-right">
+                    <div class="w-icon-slider-right"></div>
+                </div>
+                <div class="w-slider-nav w-round"></div><a class="button submit process-submit" href="#" data-ix="show-modal">Оставить заявку</a>
+            </div>
+        </div>
+    </div>
+    <div class="testimonials-section" id="testimonials">
+        <div class="w-container">
+            <h1 class="cons-heading">Отзывы</h1>
+            <div class="curved-delimiter short"></div>
+            <div class="w-clearfix testimonials-list">
+                <div class="testimonial">
+                    <div class="testimonial-image-wrap">
+                        <img class="testimonial-image" src="images/rokada.png" alt="542d67dced30ec84512efd47_rokada.png">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Хочется поблагодарить ребят за быстрое реагирование на всех этапах работы от проекта до готовой модульной конструкции.</p>
+                        <div class="horizontal-delimiter"></div>
+                        <div class="autor">Медеджер отдела снабжения</div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-image-wrap">
+                        <img class="testimonial-image" src="images/neftegaz.png" alt="542d6af94bd4dc8351c99399_neftegaz.png">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Большое спасибо за понимание и выполнение обязательств в процессе сложной поставки блок-контейнеров в Сочи.</p>
+                        <div class="horizontal-delimiter"></div>
+                        <div class="autor">Главный специалист департамента МТО</div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-image-wrap">
+                        <img class="testimonial-image" src="images/tower-logo.png" alt="542d6b05ed30ec84512efd94_tower-logo.png">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Работаем по поставкам блок-контейнеров больше года . Не смотря на редкие задержки и загруженность производства, наблюдается ответственный подход к делу и качеству.</p>
+                        <div class="horizontal-delimiter"></div>
+                        <div class="autor">Руководитель отдела снабжения</div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-image-wrap">
+                        <img class="testimonial-image" src="images/tower-logo.png" alt="542d6b05ed30ec84512efd94_tower-logo.png">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Работаем по поставкам блок-контейнеров больше года . Не смотря на редкие задержки и загруженность производства, наблюдается ответственный подход к делу и качеству.</p>
+                        <div class="horizontal-delimiter"></div>
+                        <div class="autor">Руководитель отдела снабжения</div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-image-wrap">
+                        <img class="testimonial-image" src="images/tower-logo.png" alt="542d6b05ed30ec84512efd94_tower-logo.png">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Работаем по поставкам блок-контейнеров больше года . Не смотря на редкие задержки и загруженность производства, наблюдается ответственный подход к делу и качеству.</p>
+                        <div class="horizontal-delimiter"></div>
+                        <div class="autor">Руководитель отдела снабжения</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="load-more" data-ix="show-all-testimonials">
+            <div class="load-more-text">Показать больше отзывов</div>
+            <img class="arrow-down" src="images/arrow-down.png" alt="542d8fc6e785314127dcd426_arrow-down.png">
+        </div>
+    </div>
+    <div class="footer" id="contacts">
+        <div class="footer-wrap">
+            <div class="w-container">
+                <div class="w-row">
+                    <div class="w-col w-col-4 footer-coloumn">
+                        <h1>Контакты</h1>
+                        <div class="contacts-text">Общество с ограниченной
+                            <br>ответственностью «АСС»</div>
+                        <div class="w-clearfix ogrn-wrap">
+                            <div class="ogrn">ОГРН
+                                <br>ИНН
+                                <br>КПП</div>
+                            <div class="ogrn-right">1137746628733
+                                <br>7724883219
+                                <br>772401001</div>
+                        </div>
+                        <div class="contacts-text last">Будем рады Вас видеть:
+                            <br>115280, г. Москва, ул. Ленинская Слобода, 19, БЦ Омега Плаза.</div>
+                    </div>
+                    <div class="w-col w-col-4 footer-coloumn">
+                        <div class="contact-us"><a class="footer-link" href="mailto:info@portacabin.ru">Пишите нам: info@portacabin.ru&nbsp;</a>
+                            <a class="footer-link" href="tel:84955326597">
+                                <br>Звоните нам: 8-495-532-65-97</a>
+                        </div>
+                        <div class="social-icons">
+                            <div class="facebook"></div>
+                            <div class="twitter"></div>
+                        </div>
+                    </div>
+                    <div class="w-col w-col-4 footer-coloumn">
+                        <h1 class="questions">С удовольствием ответим на любой ваш вопрос</h1>
+                        <div class="w-form">
+                            <form class="w-clearfix footer-form" id="email-form" name="email-form" data-name="Email Form">
+                                <input class="w-input input footer-input" id="username-2" type="text" placeholder="Ваше имя" name="username-2" required="required" data-name="Username 2">
+                                <input class="w-input input footer-input" id="email-2" type="text" placeholder="Ваше email" name="email-2" required="required" data-name="Email 2">
+                                <input class="w-input input footer-input" id="phone-2" type="text" placeholder="Ваш телефон" name="phone-2" required="required" data-name="Phone 2">
+                                <input class="w-button submit footer-submit" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
+                            </form>
+                            <div class="w-form-done">
+                                <p>Thank you! Your submission has been received!</p>
+                            </div>
+                            <div class="w-form-fail">
+                                <p>Oops! Something went wrong while submitting the form :(</p>
+                            </div>
+                        </div>
+                        <div class="w-clearfix studio-link">
+                            <div class="developed">Разработано в&nbsp;</div>
+                            <img class="your-face" src="images/your-face.png" alt="542d9ddbe785314127dcd4f0_your-face.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/webflow.js"></script>
+    <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
+
 </html>
