@@ -30,3 +30,34 @@ input:-ms-input-placeholder {
     top: 0px;
     font-size: 14px;
 }
+.w-icon-slider-right:before {
+    background: url(../images/right-arrow-icon.png);
+    height: 35px;
+    width: 35px;
+    content: '';
+    display: block;
+}
+.w-icon-slider-left:before {
+    background: url(../images/right-arrow-icon.png);
+    height: 35px;
+    width: 35px;
+    content: '';
+    display: block;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.w-slider-nav {
+    z-index: 200;
+}
+.w-slider-dot {
+    background: transparent;
+    border: 2px solid white;
+    width: 10px;
+    height: 10px;
+}
+.w-slider-dot.w-active {
+    background: transparent;
+    border: 5px solid #fff;
+}
