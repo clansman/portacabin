@@ -1,5 +1,5 @@
 'use strict';
-
+window.location.hash = '';
 $(function() {
     var body = $('html, body');
     $('.load-more').click(function() {
@@ -29,7 +29,8 @@ $(function() {
             if ($('.first-nav').is('.w--current') === false)
                 $('.first-nav').addClass('w--current');
         } else {
-            $('.first-nav').removeClass('w--current');
+            if ($('.first-nav').is('.w--current'))
+                $('.first-nav').removeClass('w--current');
         }
         // if ($(window).scrollTop() >= 1240) {
         //     $('.products-section').addClass('fixed-products');

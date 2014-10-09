@@ -172,9 +172,13 @@ input:-ms-input-placeholder {
     background-image: url('../images/fixed-bg-compressed.png');
     background-position: fixed;
     background-position: 50% 50%;
+    height: 560px;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .close-icon:hover {
     background-image: url(../images/close-icon-hover.png);
+}
+.arrow-right, .arrow-left {
+    z-index: 10;
 }
