@@ -98,23 +98,54 @@ input:-ms-input-placeholder {
     height: 382px;
 }
 .input {
-    padding-top: 10px;
+    padding-bottom: 0;
+    padding-top: 4px;
     color: rgb(59, 169, 206);
 }
 .nav-wrap {
     background-color: rgba(255, 255, 255, 0.96);
     box-shadow: rgba(0, 0, 0, 0.06) 1px 1px 15px 1px;
 }
-/*.nav-wrap:before {
-    background-color: #49beef;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+.navigation {
     height: 70px;
     background-color: #49beef;
-    content: ' ';
-    display: block;
-    z-index: -10;
+    position: fixed;
+    width: 100%;
+    top: 0px;
 }
-*/
+.slider-section {
+    top: 70px;
+}
+.cons-section {
+    margin-top: 735px;
+}
+.cons-section .submit, .process-section .submit {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    z-index: 1010;
+    opacity: 0;
+    -webkit-transition: visibility 0s ease 0.4s, opacity 0.4s ease;
+    -o-transition: visibility 0s ease 0.4s, opacity 0.4s ease;
+    transition: visibility 0s ease 0.4s, opacity 0.4s ease;
+}
+.overlay.open {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+.modal {
+    z-index: 1020;
+}
+.close-icon:hover {
+    background-image: url(../images/close-icon-hover.png);
+}
