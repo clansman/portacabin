@@ -19,3 +19,6 @@ input::-moz-placeholder {
 input:-ms-input-placeholder {
     color: #87d6f7 !important;
 }
+.w-slider-nav {
+    bottom: 58px;
+}
