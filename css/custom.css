@@ -138,6 +138,28 @@ input:-ms-input-placeholder {
     -o-transition: visibility 0s ease 0.4s, opacity 0.4s ease;
     transition: visibility 0s ease 0.4s, opacity 0.4s ease;
 }
+/*.products-section {
+    padding-bottom: 400px;
+}
+*/
+
+.products-section.fixed-products {
+    position: fixed;
+    width: 100%;
+    top: 70px;
+    left: 0;
+}
+/*.mt-process {
+    margin-top: 1080px;
+}
+*/
+
+.navigation {
+    background-color: transparent;
+}
+.w-nav {
+    background: transparent;
+}
 .overlay.open {
     opacity: 1;
     visibility: visible;
@@ -145,6 +167,13 @@ input:-ms-input-placeholder {
 }
 .modal {
     z-index: 1020;
+}
+.process-section {
+    background-image: url('../images/fixed-bg-compressed.png');
+    background-position: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .close-icon:hover {
     background-image: url(../images/close-icon-hover.png);

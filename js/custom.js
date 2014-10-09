@@ -31,6 +31,23 @@ $(function() {
         } else {
             $('.first-nav').removeClass('w--current');
         }
+        // if ($(window).scrollTop() >= 1240) {
+        //     $('.products-section').addClass('fixed-products');
+        //     $('.process-section').addClass('mt-process');
+        // } else {
+        //     if ($('.products-section').is('.fixed-products')) {
+        //         $('.products-section').removeClass('fixed-products');
+        //     }
+        //     if ($('.process-section').is('.mt-process')) {
+        //         $('.process-section').removeClass('mt-process');
+        //     }
+        // }
+
+        if ($(window).scrollTop() >= 720) {
+            $('.slider-section').hide();
+        } else {
+            $('.slider-section').show();
+        }
     });
 
     $('.first-nav').click(function() {});
