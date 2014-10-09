@@ -22,3 +22,11 @@ input:-ms-input-placeholder {
 .w-slider-nav {
     bottom: 58px;
 }
+.price {
+    position: relative;
+}
+.power {
+    position: absolute;
+    top: 0px;
+    font-size: 14px;
+}
