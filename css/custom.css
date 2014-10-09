@@ -84,3 +84,37 @@ input:-ms-input-placeholder {
 .slider-form .horizontal-delimiter {
     margin-top: 7px;
 }
+.submit {
+    margin-top: 5px;
+    padding: 5px 31px 4px;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+.submit:hover {
+    background-color: #16c57d;
+}
+.slider-form {
+    height: 382px;
+}
+.input {
+    padding-top: 10px;
+    color: rgb(59, 169, 206);
+}
+.nav-wrap {
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: rgba(0, 0, 0, 0.06) 1px 1px 15px 1px;
+}
+/*.nav-wrap:before {
+    background-color: #49beef;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: #49beef;
+    content: ' ';
+    display: block;
+    z-index: -10;
+}
+*/
