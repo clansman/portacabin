@@ -80,7 +80,10 @@ input:-ms-input-placeholder {
     background: transparent;
     border: 5px solid #fff;
 }
-.facebook:hover, .twitter:hover, .load-more:hover, .close-icon:hover {
+.facebook:hover,
+.twitter:hover,
+.load-more:hover,
+.close-icon:hover {
     cursor: pointer;
 }
 .testimonials-section {
@@ -135,7 +138,8 @@ input:-ms-input-placeholder {
 .cons-section {
     margin-top: 735px;
 }
-.cons-section .submit, .process-section .submit {
+.cons-section .submit,
+.process-section .submit {
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
@@ -272,4 +276,121 @@ input:-ms-input-placeholder {
     transform: scale(1);
     left: -8px;
     top: -8px;
+}
+.footer {
+    min-height: 665px;
+    background-image: url('../images/pattern2.png');
+}
+.footer-header {
+    margin-top: 80px;
+}
+.footer-content {
+    margin-top: 30px;
+}
+.product-price .power {
+    top: 20px;
+}
+.nav-link {
+    padding: 23px 9px;
+}
+@media screen and (max-width: 1100px) {
+    .slider-form {
+        float: none;
+    }
+    .slide-message {
+        left: 94px;
+    }
+    .testimonial {
+        float: none;
+    }
+    .testimonial-image-wrap {
+        float: none;
+        display: block;
+    }
+    .testimonial-content {
+        display: block;
+        max-width: 228px;
+        margin-left: 27px;
+        float: none;
+    }
+    .testimonials-section {
+        max-height: 463px;
+    }
+    .products-list {
+        text-align: center;
+    }
+    .product {
+        float: none;
+        display: inline-block;
+    }
+    .slider-section .slider-form-heading {
+        padding-top: 12px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .logo-column {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 479px) {
+    .process-section .w-slide {
+        text-align: center;
+    }
+    .step-number {
+        display: block;
+        margin-top: 15px;
+        margin: 15px auto;
+        float: none;
+        font-size: 42px;
+    }
+    .step-number.slash {
+        display: none;
+    }
+    .process-step-description {
+        display: block;
+        max-width: 232px;
+        margin: 0 auto;
+        float: none;
+    }
+    .process-section .w-slide h1 {
+        margin-bottom: 10px;
+        line-height: 1;
+        font-size: 20px;
+    }
+    .step-text {
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 25px;
+        font-weight: 100;
+    }
+    .process-step-image-wrap {
+        display: block;
+        margin: 0 auto;
+        max-width: 83px;
+        float: none;
+        text-align: center;
+    }
+    .slide-message {
+        left: 44px;
+    }
+    .slide-message.block {
+        bottom: 46px;
+    }
+    .slider-section .w-slider-nav {
+        bottom: 0px;
+    }
+    .hit {
+        right: 0px;
+    }
+    .slider-section {
+        position: static;
+        margin-top: 70px;
+    }
+    .cons-section {
+        margin-top: auto;
+    }
+    .product.middle {
+        margin-left: 10px;
+    }
+}
 }
