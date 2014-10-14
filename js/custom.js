@@ -1,5 +1,5 @@
 'use strict';
-window.location.hash = '';
+
 $(function() {
     var body = $('html, body');
     $('.load-more').click(function() {
