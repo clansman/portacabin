@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed Oct 08 2014 19:42:15 GMT+0000 (UTC) -->
 <html data-wf-site="5429a1dd33f5da892c610d70" data-wf-page="5429a1dd33f5da892c610d71">
 
 <head>
     <meta charset="utf-8">
     <title>portcabin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Webflow">
+    <meta name="google-site-verification" content="n-2Kj92K-joicbwK-cSHPWSrgcE5AAR69Q3rTjLAMz0" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/webflow.css">
     <link rel="stylesheet" type="text/css" href="css/portcabin.webflow.css">
@@ -49,17 +47,17 @@ n.ico"> -->
             </div>
         </div>
         <div class="w-form">
-            <form class="modal-form" id="email-form" name="email-form" data-name="Email Form">
-                <input class="w-input input modal-input" id="username-3" type="text" placeholder="Ваше имя" name="username-3" required="required" data-name="Username 3">
-                <input class="w-input input modal-input" id="email-3" type="text" placeholder="Ваше email" name="email-3" required="required" data-name="Email 3">
-                <input class="w-input input modal-input" id="phone-3" type="text" placeholder="Ваш телефон" name="phone-3" required="required" data-name="Phone 3">
-                <input class="w-button submit modal-submit" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
+            <form class="modal-form" id="modal-email-form" name="email-form" data-name="Email Form">
+                <input class="w-input input modal-input" id="username-3" type="text" placeholder="Ваше имя" name="username" required="required" data-name="Username 3">
+                <input class="w-input input modal-input" id="email-3" type="text" placeholder="Ваше email" name="email" required="required" data-name="Email 3">
+                <input class="w-input input modal-input" id="phone-3" type="text" placeholder="Ваш телефон" name="phone" required="required" data-name="Phone 3">
+                <input class="w-button submit modal-submit" onclick="sendForm(event, '#modal-email-form')" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
             </form>
             <div class="w-form-done">
-                <p>Thank you! Your submission has been received!</p>
+                <p>Спасибо! Ваша заявка на рассмотрении.</p>
             </div>
             <div class="w-form-fail">
-                <p>Oops! Something went wrong while submitting the form :(</p>
+                <p>Опаньки! Произошла ошибка :(</p>
             </div>
         </div>
     </div>
@@ -242,7 +240,7 @@ n.ico"> -->
                     <div class="product-price">от 125 000 ₽</div><a class="button submit product-button" href="#" data-ix="show-modal">Закажите сейчас</a>
                 </div>
                 <div class="product" data-ix="fadeup">
-                    <h1 class="rm-heading product-heading last-heading">Административно-бытовой комплекс</h1>
+                    <h1 class="slider-form-heading product-heading last-heading">Административно-бытовой комплекс</h1>
                     <div class="horizontal-delimiter last"></div>
                     <img class="product-image last" src="images/campus.png" alt="542c563c9a41e2da4e2cc19c_campus.png">
                     <div class="horizontal-delimiter"></div>
@@ -425,17 +423,17 @@ n.ico"> -->
                         <div class="w-col w-col-4 footer-coloumn">
                             <h1 class="questions">С удовольствием ответим на любой ваш вопрос</h1>
                             <div class="w-form">
-                                <form class="w-clearfix footer-form" id="email-form" name="email-form" data-name="Email Form">
-                                    <input class="w-input input footer-input" id="username-2" type="text" placeholder="Ваше имя" name="username-2" required="required" data-name="Username 2">
-                                    <input class="w-input input footer-input" id="email-2" type="text" placeholder="Ваше email" name="email-2" required="required" data-name="Email 2">
-                                    <input class="w-input input footer-input" id="phone-2" type="text" placeholder="Ваш телефон" name="phone-2" required="required" data-name="Phone 2">
-                                    <input class="w-button submit footer-submit" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
+                                <form class="w-clearfix footer-form" id="footer-email-form" name="email-form" data-name="Email Form">
+                                    <input class="w-input input footer-input" id="username-2" type="text" placeholder="Ваше имя" name="username" required="required" data-name="Username 2">
+                                    <input class="w-input input footer-input" id="email-2" type="text" placeholder="Ваше email" name="email" required="required" data-name="Email 2">
+                                    <input class="w-input input footer-input" id="phone-2" type="text" placeholder="Ваш телефон" name="phone" required="required" data-name="Phone 2">
+                                    <input class="w-button submit footer-submit" onclick="sendForm(event, '#footer-email-form');" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
                                 </form>
                                 <div class="w-form-done">
-                                    <p>Thank you! Your submission has been received!</p>
+                                    <p>Спасибо! Ваша заявка на рассмотрении.</p>
                                 </div>
                                 <div class="w-form-fail">
-                                    <p>Oops! Something went wrong while submitting the form :(</p>
+                                    <p>Опаньки! Произошла ошибка :(</p>
                                 </div>
                             </div>
 

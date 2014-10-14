@@ -1,5 +1,4 @@
 'use strict';
-var mak = '8LERgIxL5ItrPwJUwrSTXg';
 $(function() {
     var body = $('html, body');
     $('.load-more').click(function() {
@@ -38,33 +37,11 @@ $(function() {
             $('.slider-section').show();
         }
     });
-
-    $('.first-nav').click(function() {});
 });
 
 // create a new instance of the Mandrill class with your API key
-var m = new mandrill.Mandrill(mak);
-console.log(m);
 // create a variable for the API call parameters
-var params = {
-    'message': {
-        'from_email': 'user-email@portacabin.ru',
-        'to': [{
-            'email': 'mail@zulfat.net'
-        }],
-        'subject': 'Sending a text email from the Mandrill API',
-        'text': 'I\'am learning the Mandrill API at Codecademy.'
-    }
-};
-
-function sendForm(event, formId) {
-    event.stopPropagation();
-    var $form = $(formId);
-
-    var username = $form.find('[name="username"]').val();
-    var email = $form.find('[name="email"]').val();
-    var phone = $form.find('[name="phone"]').val();
-
+function sendEmail(apikey, username, email, phone) {
     var msg = {
         'html': '<h3>Имя: ' + username + '</h3><br>' + '<h3>Email: ' + email + '</h3><br>' + '<h3>Телефон: ' + phone + '</h3>',
         'subject': 'Заявка с portacabin',
@@ -76,11 +53,37 @@ function sendForm(event, formId) {
             'type': 'to'
         }]
     };
-    $.post('https://mandrillapp.com/api/1.0/messages/send.json', {
-            'key': mak,
-            'message': msg
+    return $.post('https://mandrillapp.com/api/1.0/messages/send.json', {
+        'key': apikey,
+        'message': msg
+    });
+}
+
+function sendForm(event, formId) {
+    event.stopPropagation();
+    event.preventDefault();
+
+    var $form = $(formId);
+    var username = $form.find('[name="username"]').val();
+    var email = $form.find('[name="email"]').val();
+    var phone = $form.find('[name="phone"]').val();
+
+    sendEmail('8LERgIxL5ItrPwJUwrSTXg', username, email, phone)
+        .done(function(resp) {
+            console.log(resp);
+            if (resp && resp[0] && resp[0].status === 'rejected') {
+                $form.hide();
+                $form.parent().find('.w-form-fail').show();
+            } else {
+                $form.hide();
+                $form.parent().find('.w-form-done').show();
+            }
         })
-        .done(function() {
-            console.log(arguments);
+        .fail(function(resp) {
+            console.log(resp);
+            $form.hide();
+            $form.parent().find('.w-form-fail').show();
         });
+    $form.find('.submit').val('Подождите');
+    return false;
 }
