@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>portcabin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="n-2Kj92K-joicbwK-cSHPWSrgcE5AAR69Q3rTjLAMz0" />
+
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/webflow.css">
     <link rel="stylesheet" type="text/css" href="css/portcabin.webflow.css">
@@ -51,6 +51,7 @@ n.ico"> -->
                 <input class="w-input input modal-input" id="username-3" type="text" placeholder="Ваше имя" name="username" required="required" data-name="Username 3">
                 <input class="w-input input modal-input" id="email-3" type="text" placeholder="Ваше email" name="email" required="required" data-name="Email 3">
                 <input class="w-input input modal-input" id="phone-3" type="text" placeholder="Ваш телефон" name="phone" required="required" data-name="Phone 3">
+                <div class="error-message"></div>
                 <input class="w-button submit modal-submit" onclick="sendForm(event, '#modal-email-form')" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
             </form>
             <div class="w-form-done">
@@ -122,7 +123,9 @@ n.ico"> -->
                                         <input class="w-input input username-input" id="username" type="text" placeholder="Ваше имя" name="username" required="required" data-name="username">
                                         <input class="w-input input email-input" id="email" type="text" placeholder="Ваше email" name="email" required="required" data-name="email">
                                         <input class="w-input input phone-input" id="phone" type="text" placeholder="Ваш телефон" name="phone" required="required" data-name="phone">
+                                        <div class="error-message"></div>
                                         <input class="w-button submit" onclick="sendForm(event,'#slider-email-form');" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
+
                                     </form>
                                     <div class="w-form-done">
                                         <p>Спасибо! Ваша заявка на рассмотрении.</p>
@@ -427,6 +430,7 @@ n.ico"> -->
                                     <input class="w-input input footer-input" id="username-2" type="text" placeholder="Ваше имя" name="username" required="required" data-name="Username 2">
                                     <input class="w-input input footer-input" id="email-2" type="text" placeholder="Ваше email" name="email" required="required" data-name="Email 2">
                                     <input class="w-input input footer-input" id="phone-2" type="text" placeholder="Ваш телефон" name="phone" required="required" data-name="Phone 2">
+                                    <div class="error-message"></div>
                                     <input class="w-button submit footer-submit" onclick="sendForm(event, '#footer-email-form');" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
                                 </form>
                                 <div class="w-form-done">

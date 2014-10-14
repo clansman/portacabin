@@ -39,8 +39,6 @@ $(function() {
     });
 });
 
-// create a new instance of the Mandrill class with your API key
-// create a variable for the API call parameters
 function sendEmail(apikey, username, email, phone) {
     var msg = {
         'html': '<h3>Имя: ' + username + '</h3><br>' + '<h3>Email: ' + email + '</h3><br>' + '<h3>Телефон: ' + phone + '</h3>',
@@ -48,8 +46,8 @@ function sendEmail(apikey, username, email, phone) {
         'from_email': email,
         'from_name': username,
         'to': [{
-            'email': 'mail@zulfat.net',
-            'name': 'Zulfat Ilyasov',
+            'email': 'info@portacabin.ru',
+            'name': 'Portacabin',
             'type': 'to'
         }]
     };
@@ -59,14 +57,41 @@ function sendEmail(apikey, username, email, phone) {
     });
 }
 
+function validEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
 function sendForm(event, formId) {
     event.stopPropagation();
     event.preventDefault();
 
     var $form = $(formId);
+    $form.find('[name="username"]').removeClass('error');
+    $form.find('[name="email"]').removeClass('error');
+    $form.find('[name="phone"]').removeClass('error');
+    $('.error-message').hide();
     var username = $form.find('[name="username"]').val();
     var email = $form.find('[name="email"]').val();
     var phone = $form.find('[name="phone"]').val();
+
+    if (!username || !email || !phone) {
+        $form.find('.error-message').text('* Заполните все поля.')
+        $form.find('.error-message').show();
+        if (!username)
+            $form.find('[name="username"]').addClass('error');
+        if (!email)
+            $form.find('[name="email"]').addClass('error');
+        if (!phone)
+            $form.find('[name="phone"]').addClass('error');
+        return false;
+    }
+    if (!validEmail(email)) {
+        $form.find('.error-message').text('* Некорректный email')
+        $form.find('.error-message').show();
+        $form.find('[name="email"]').addClass('error');
+        return false;
+    }
 
     sendEmail('8LERgIxL5ItrPwJUwrSTXg', username, email, phone)
         .done(function(resp) {

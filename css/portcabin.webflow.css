@@ -10,8 +10,8 @@ h1 {
     margin-bottom: 10px;
     color: white;
     font-size: 48px;
-    line-height: 44px;
     font-weight: 100;
+    line-height: 44px;
 }
 h2 {
     margin-top: 20px;
@@ -399,8 +399,8 @@ p {
 .con {
     display: inline-block;
     width: 158px;
-margin-right: 18px;
-margin-left: 18px;
+    margin-right: 18px;
+    margin-left: 18px;
     float: left;
 }
 .con.first {
