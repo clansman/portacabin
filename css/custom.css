@@ -80,10 +80,7 @@ input:-ms-input-placeholder {
     background: transparent;
     border: 5px solid #fff;
 }
-.facebook:hover,
-.twitter:hover,
-.load-more:hover,
-.close-icon:hover {
+.facebook:hover, .twitter:hover, .load-more:hover, .close-icon:hover {
     cursor: pointer;
 }
 .testimonials-section {
@@ -138,8 +135,7 @@ input:-ms-input-placeholder {
 .cons-section {
     margin-top: 735px;
 }
-.cons-section .submit,
-.process-section .submit {
+.cons-section .submit, .process-section .submit {
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
@@ -393,4 +389,6 @@ input:-ms-input-placeholder {
         margin-left: 10px;
     }
 }
+.submit.process-submit {
+    bottom: 57px;
 }
