@@ -276,6 +276,7 @@ input:-ms-input-placeholder {
 .footer {
     min-height: 665px;
     background-image: url('../images/pattern2.png');
+    background-attachment: fixed;
 }
 .footer-header {
     margin-top: 80px;
