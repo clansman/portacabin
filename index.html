@@ -17,11 +17,11 @@
     <!-- <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/placeholder/favico
 n.ico"> -->
     <style type="text/css">
-        @media screen and (min-width: 1100px) {
-            .w-container {
-                max-width: 1130px;
-            }
+    @media screen and (min-width: 1100px) {
+        .w-container {
+            max-width: 1130px;
         }
+    }
     </style>
 </head>
 
@@ -120,17 +120,17 @@ n.ico"> -->
                                 </div>
                                 <div class="horizontal-delimiter"></div>
                                 <div class="w-form">
-                                    <form class="w-clearfix" id="email-form" name="email-form" data-name="Email Form">
-                                        <input class="w-input input" id="username" type="text" placeholder="Ваше имя" name="username" required="required" data-name="username">
-                                        <input class="w-input input" id="email" type="text" placeholder="Ваше email" name="email" required="required" data-name="email">
-                                        <input class="w-input input" id="phone" type="text" placeholder="Ваш телефон" name="phone" required="required" data-name="phone">
-                                        <input class="w-button submit" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
+                                    <form class="w-clearfix" id="slider-email-form" name="email-form" data-name="Email Form">
+                                        <input class="w-input input username-input" id="username" type="text" placeholder="Ваше имя" name="username" required="required" data-name="username">
+                                        <input class="w-input input email-input" id="email" type="text" placeholder="Ваше email" name="email" required="required" data-name="email">
+                                        <input class="w-input input phone-input" id="phone" type="text" placeholder="Ваш телефон" name="phone" required="required" data-name="phone">
+                                        <input class="w-button submit" onclick="sendForm(event,'#slider-email-form');" type="submit" value="Отпарвить" data-wait="Подождите..." wait="Подождите...">
                                     </form>
                                     <div class="w-form-done">
-                                        <p>Thank you! Your submission has been received!</p>
+                                        <p>Спасибо! Ваша заявка на рассмотрении.</p>
                                     </div>
                                     <div class="w-form-fail">
-                                        <p>Oops! Something went wrong while submitting the form :(</p>
+                                        <p>Опаньки! Произошла ошибка :(</p>
                                     </div>
                                 </div>
                             </div>
@@ -242,12 +242,13 @@ n.ico"> -->
                     <div class="product-price">от 125 000 ₽</div><a class="button submit product-button" href="#" data-ix="show-modal">Закажите сейчас</a>
                 </div>
                 <div class="product" data-ix="fadeup">
-                    <h1 class="slider-form-heading product-heading last-heading">Административно-бытовой комплекс</h1>
+                    <h1 class="rm-heading product-heading last-heading">Административно-бытовой комплекс</h1>
                     <div class="horizontal-delimiter last"></div>
                     <img class="product-image last" src="images/campus.png" alt="542c563c9a41e2da4e2cc19c_campus.png">
                     <div class="horizontal-delimiter"></div>
                     <p class="product-description last">Минимальная цена строительства и эксплуатации для любых объектов</p>
-                    <div class="product-price">от 4 900 ₽/м <span class="power">2</span>
+                    <div class="product-price">от 4 900 ₽/м
+                        <span class="power">2</span>
                     </div><a class="button submit product-button" href="#" data-ix="show-modal">Закажите сейчас</a>
                 </div>
             </div>
@@ -450,6 +451,7 @@ n.ico"> -->
     </div>
     <div class="overlay"></div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://mandrillapp.com/api/docs/js/mandrill.js"></script>
     <script type="text/javascript" src="js/webflow.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
