@@ -144,8 +144,10 @@ n.ico"> -->
                             <p class="slider-paragraph complex" data-ix="fadein400">Блок-контейнер</p>
                             <div class="total">
                                 <strong class="amount" data-ix="fadein400">45 000
-                                    <span>₽</span>
                                 </strong>
+                                <div data-ix="fadein400" class="currency">
+                                    <img src="images/ruble-blue.png" alt="">
+                                </div>
                             </div>
                         </div>
                         <img class="slide-image first-image" src="images/image1.png" alt="542af4faae69925e30ac9fc3_image1.png">
@@ -155,9 +157,10 @@ n.ico"> -->
                         <div class="slide-message module">
                             <p class="slider-paragraph complex">Модульное здание</p>
                             <div class="total">
-                                <strong class="amount">125 000
-                                    <span>₽</span>
-                                </strong>
+                                <strong class="amount">125 000</strong>
+                                <div class="currency">
+                                    <img src="images/ruble-blue.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -166,11 +169,13 @@ n.ico"> -->
                         <div class="slide-message block">
                             <p class="slider-paragraph complex">Административно-бытовой комплекс&nbsp;от</p>
                             <div class="total">
-                                <strong class="amount">4 900
-                                    <span class="price">₽/м
-                                        <span class="power">2</span>
-                                    </span>
-                                </strong>
+                                <strong class="amount">4 900</strong>
+                                <div class="currency">
+                                    <img src="images/ruble-blue.png" alt="">
+                                </div>
+                                <span class="price">/м
+                                    <span class="power">2</span>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -230,7 +235,11 @@ n.ico"> -->
                     <img class="product-image first" src="images/product-image-1.png" alt="542c52b3bdc3beb32437732c_product-image-1.png">
                     <div class="horizontal-delimiter"></div>
                     <p class="product-description">Прекрасно подходит для комплектации любого объекта</p>
-                    <div class="product-price">от 46 000 ₽</div><a class="button submit product-button" href="#" data-ix="show-modal">Закажите сейчас</a>
+                    <div class="product-price">от 45 000
+                        <div class="currency blue">
+                            <img src="images/ruble-white.png" alt="">
+                        </div>
+                    </div><a class="button submit product-button" href="#" data-ix="show-modal">Закажите сейчас</a>
                 </div>
                 <div class="product middle lifted-corners" data-ix="fadeup-2">
                     <div class="ogranka"></div>
@@ -240,7 +249,11 @@ n.ico"> -->
                     <img class="product-image first" src="images/modular-building.png" alt="542c56289a41e2da4e2cc198_modular-building.png">
                     <div class="horizontal-delimiter"></div>
                     <p class="product-description">Для любых целей: от зала совещаний до офиса продаж</p>
-                    <div class="product-price">от 125 000 ₽</div><a class="button submit product-button" href="#" data-ix="show-modal">Закажите сейчас</a>
+                    <div class="product-price">от 125 000
+                        <div class="currency blue">
+                            <img src="images/ruble-white.png" alt="">
+                        </div>
+                    </div><a class="button submit product-button" href="#" data-ix="show-modal">Закажите сейчас</a>
                 </div>
                 <div class="product" data-ix="fadeup">
                     <h1 class="slider-form-heading product-heading last-heading">Административно-бытовой комплекс</h1>
@@ -248,7 +261,10 @@ n.ico"> -->
                     <img class="product-image last" src="images/campus.png" alt="542c563c9a41e2da4e2cc19c_campus.png">
                     <div class="horizontal-delimiter"></div>
                     <p class="product-description last">Минимальная цена строительства и эксплуатации для любых объектов</p>
-                    <div class="product-price">от 4 900 ₽/м
+                    <div class="product-price">от 4 900
+                        <div class="currency blue">
+                            <img src="images/ruble-white.png" alt="">
+                        </div>/м
                         <span class="power">2</span>
                     </div><a class="button submit product-button" href="#" data-ix="show-modal">Закажите сейчас</a>
                 </div>
@@ -400,8 +416,9 @@ n.ico"> -->
                 <div class="footer-content">
                     <div class="w-row">
                         <div class="w-col w-col-4 footer-coloumn">
-                            <div class="contacts-text">Общество с ограниченной
-                                <br>ответственностью «АСС»</div>
+                            <div class="footer-logo">
+                                <img src="images/logo2.png" height="21" width="146" alt="">
+                            </div>
                             <div class="w-clearfix ogrn-wrap">
                                 <div class="ogrn">ОГРН
                                     <br>ИНН
@@ -456,6 +473,43 @@ n.ico"> -->
     <script type="text/javascript" src="https://mandrillapp.com/api/docs/js/mandrill.js"></script>
     <script type="text/javascript" src="js/webflow.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function(d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter26630697 = new Ya.Metrika({
+                    id: 26630697,
+                    webvisor: true,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true
+                });
+            } catch (e) {}
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function() {
+                n.parentNode.insertBefore(s, n);
+            };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div>
+            <img src="//mc.yandex.ru/watch/26630697" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
     <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
 

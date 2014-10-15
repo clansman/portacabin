@@ -24,6 +24,8 @@ input:-ms-input-placeholder {
 }
 .price {
     position: relative;
+    font-weight: 400;
+    margin-left: -8px;
 }
 .power {
     position: absolute;
@@ -419,4 +421,15 @@ input.error:-ms-input-placeholder {
     font-weight: 300;
     text-align: left;
     margin-left: 20px;
+}
+.footer-logo {
+    margin-bottom: 26px;
+}
+.currency {
+    display: inline-block;
+    position: relative;
+    bottom: 3px
+}
+.currency.blue img {
+    max-height: 18px;
 }
