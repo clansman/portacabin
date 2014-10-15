@@ -420,3 +420,6 @@ input.error:-ms-input-placeholder {
     text-align: left;
     margin-left: 20px;
 }
+.studio-link {
+    display: none;
+}
