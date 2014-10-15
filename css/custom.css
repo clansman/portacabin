@@ -433,3 +433,9 @@ input.error:-ms-input-placeholder {
 .currency.blue img {
     max-height: 18px;
 }
+.studio-link {
+    display: none;
+}
+.ogranka {
+    right: -8px;
+}
