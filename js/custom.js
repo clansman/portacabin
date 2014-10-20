@@ -1,5 +1,9 @@
 'use strict';
 $(function() {
+    if ($(window).width() > 950) {
+        $.stellar()
+    };
+
     var body = $('html, body');
     $('.load-more').click(function() {
         $('.testimonials-section').addClass('open');
@@ -31,10 +35,12 @@ $(function() {
             if ($('.first-nav').is('.w--current'))
                 $('.first-nav').removeClass('w--current');
         }
-        if ($(window).scrollTop() >= 720) {
-            $('.slider-section').hide();
-        } else {
-            $('.slider-section').show();
+        if ($(window).width() > 950) {
+            if ($(window).scrollTop() >= 720) {
+                $('.slider-section').hide();
+            } else {
+                $('.slider-section').show();
+            }
         }
     });
 });

@@ -334,6 +334,41 @@ input:-ms-input-placeholder {
         width: 100%;
     }
 }
+@media screen and (max-width: 768px) {
+    .questions {
+        font-size: 28px;
+    }
+    .slider-section {
+        position: static;
+        margin-top: 70px;
+    }
+    .cons-section {
+        margin-top: 0;
+    }
+    .step-number {
+        font-size: 300px;
+    }
+    .process-step-image-wrap {
+        display: none;
+    }
+    .step-number.slash {
+        display: none;
+    }
+    .testimonials-section {
+        max-height: 563px;
+    }
+    .slide-message.block {
+        bottom: 153px;
+        left: 70px;
+    }
+    .slide-message, .slide-message.module {
+        bottom: 190px;
+        left: 70px;
+    }
+    .submit {
+        margin-bottom: 12px;
+    }
+}
 @media screen and (max-width: 479px) {
     .process-section .w-slide {
         text-align: center;
