@@ -1,8 +1,9 @@
 'use strict';
 $(function() {
-    if ($(window).width() > 950) {
-        $.stellar()
-    };
+  //   if ($(window).width() > 950) {
+ //     $.stellar()
+ // };
+
 
     var body = $('html, body');
     $('.load-more').click(function() {
