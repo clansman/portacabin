@@ -1,9 +1,12 @@
 'use strict';
 $(function() {
-  //   if ($(window).width() > 950) {
- //     $.stellar()
- // };
-
+    // if ($(window).width() > 950) {
+    //     // $.stellar({
+    //     //     scrollProperty: 'transform',
+    //     //     positionProperty: 'transform',
+    //     //     parallaxBackgrounds: true,
+    //     // });
+    // }
 
     var body = $('html, body');
     $('.load-more').click(function() {
