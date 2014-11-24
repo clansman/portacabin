@@ -192,6 +192,7 @@ input:-ms-input-placeholder {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    z-index: auto;
 }
 .close-icon:hover {
     background-image: url(../images/close-icon-hover.png);
@@ -498,4 +499,78 @@ input.error:-ms-input-placeholder {
 }
 .logo-wrap {
     padding-left: 0;
+}
+.download-overlay{
+  opacity: 0;
+  position: absolute;
+  top: 60px;
+  width: 320px;
+  height: 340px;
+  background: rgba(24, 147, 199, 0.85); 
+  -webkit-transition: opacity 0.25s ease-out;
+  -o-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+}
+.products-list .product:hover .download-overlay{
+  opacity: 1;
+}
+.products-list .product{
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.products-list .product:hover .download-header{
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+}
+.products-list .product:hover .download-icon{
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+}
+.products-list .product:hover .product-image{
+  -webkit-transform: translate3d(0,0,300px);
+  -ms-transform: translate3d(0,0,-100px);
+  -o-transform: translate3d(0,0,-100px);
+  transform: translate3d(0,0,-100px);
+}
+.download-header{
+  font-size: 20px;
+  color:#fff;
+  margin: 0 auto;
+  margin-top: 53px;
+  max-width: 190px;
+  border-bottom: 1px solid #fff;
+  opacity: 0;
+  -webkit-transition: transform 0.30s ease-out 0s, opacity 0.30s ease-out 0s;
+  -o-transition: transform 0.30s ease-out 0s, opacity 0.30s ease-out 0s;
+  transition: transform 0.30s ease-out 0s, opacity 0.30s ease-out 0s;
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.download-icon{
+  margin-top: 47px;
+  opacity: 0;
+  -webkit-transition: transform 0.30s ease-out 0s, opacity 0.30s ease-out 0s;
+  -o-transition: transform 0.30s ease-out 0s, opacity 0.30s ease-out 0s;
+  transition: transform 0.30s ease-out 0s, opacity 0.30s ease-out 0s;
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.product-image{
+  -webkit-transition: transform 0.35s ease-out;
+  -o-transition: transform 0.35s ease-out;
+  transition: transform 0.35s ease-out;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
