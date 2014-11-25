@@ -82,6 +82,15 @@ input:-ms-input-placeholder {
     background: transparent;
     border: 5px solid #fff;
 }
+.linkedIn{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url(../images/linkedin-orig.png);
+}
+.linkedIn:hover{
+    background: url(../images/linkedin.png);
+}
 .facebook:hover, .twitter:hover, .load-more:hover, .close-icon:hover {
     cursor: pointer;
 }
